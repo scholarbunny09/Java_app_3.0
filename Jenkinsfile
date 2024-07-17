@@ -2,7 +2,7 @@
 
 pipeline{
 
-    agent { label 'dev' }
+    agent any
 
     parameters{
 
