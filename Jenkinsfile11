@@ -2,11 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('git checkout')
-
-         gitCheckout(
-            branch: "main"
-            url: "https://github.com/scholarbunny09/Java_app_3.0.git"
-         )
+        stage('git checkout') {
+            steps {
+                gitCheckout(
+                    branch: "main",
+                    url: "https://github.com/scholarbunny09/Java_app_3.0.git"
+                )
+            }
+        }
     }
 }
